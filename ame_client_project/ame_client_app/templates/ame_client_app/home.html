@@ -6,19 +6,19 @@
 
   
   <script>
-    function ajaxCallCreateL0(case_value) {
-    
-    let L0value = document.getElementById('L0').value;
-      fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}`)
-        .then(response => response.json())
-        .then(data => {
-          alert(data.case);
-        })
-        .catch(error => {
-          alert("An error occurred:", error);
-        });
+    function ajaxCallCreateL0(case_value,L0value,L0appear) {
+        fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}&L0appear=${encodeURIComponent(L0appear)}`)
+            .then(response => response.json())
+            .then(data => {
+              alert(data.message);
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
     }
+    
   </script>
+  
   <style>
     .message-box {
       border: 1px solid #ccc;
@@ -43,6 +43,7 @@
 </center>
 <!--<label for="L1">Level 1 Proposition:</label>
 <input type="text" id="L1" name="L1" placeholder=""> -->
+<!--let L0value = document.getElementById('L0').value; -->
 <!--let caseLength = case_value.length;
     alert('Case length: ' + caseLength); -->
 
@@ -53,10 +54,10 @@
     <label for="L0appear">Level 0 Appearance:</label>
     <input type="text" id="L0appear" name="L0appear" placeholder="Enter terms...">
     <br>
-    <button onclick="ajaxCallCreateL0('{{data.case}}')">CREATE L0 PROPOSITION</button> 
+    <button onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">CREATE L0 PROPOSITION</button> 
 
 {% elif state == 'test' %}
-    <button onclick="ajaxCallTrain('{{data.case}}')">SET CASE TO TRAIN</button> 
+    <button onclick="ajaxCallTrain('{{data.case}}',L0.value)">SET CASE TO TRAIN</button> 
 
 {% endif %}  
 

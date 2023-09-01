@@ -1,0 +1,40 @@
+2023-09-01 20:51:20,851:INFO:L0 proposition>{'case': '216', 'proposition': '', 'appearance': 'appearance', 'level': 0}
+2023-09-01 20:54:01,000:INFO:L0 proposition>{'case': 216, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:03:57,178:INFO:L0 proposition>{'case': 216, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:04:25,601:INFO:L0 proposition>{'case': 216, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:04:44,370:WARNING:Not Found: /
+2023-09-01 21:04:44,393:WARNING:Not Found: /favicon.ico
+2023-09-01 21:04:56,341:INFO:L0 proposition>{'case': 217, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:05:48,959:INFO:L0 proposition>{'case': 218, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:09:51,967:INFO:L0 proposition>{'case': 219, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:15:24,992:INFO:L0 proposition>{'case': 220, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:17:24,518:INFO:L0 proposition>{'case': 220, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:23:57,985:INFO:L0 proposition>{'case': 224, 'proposition': 'this is mike', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:25:17,509:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:25:44,566:INFO:L0 proposition>{'case': 224, 'proposition': 'This is an L0 prop', 'appearance': 'appearance', 'essence': '', 'level': 0}
+2023-09-01 21:29:35,500:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:29:40,839:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:29:56,216:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:30:14,384:INFO:L0 proposition>{'case': 226, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:33:29,366:INFO:L0 proposition>{'case': 227, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:34:23,864:INFO:L0 proposition>{'case': 228, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:36:32,132:INFO:L0 proposition>{'case': 229, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:36:50,908:INFO:L0 proposition>{'case': 229, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:36:54,028:INFO:L0 proposition>{'case': 229, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:37:49,810:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:37:52,127:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:38:06,918:INFO:L0 proposition>{'case': 230, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:39:44,237:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:40:07,657:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:40:46,513:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:41:04,955:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:41:38,408:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 21:41:48,518:INFO:L0 proposition>{'case': 231, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:44:29,803:INFO:L0 proposition>{'case': 232, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:48:44,979:INFO:L0 proposition>{'case': 233, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:49:06,021:INFO:L0 proposition>{'case': 234, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:51:18,488:INFO:L0 proposition>{'case': 235, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:54:55,086:INFO:L0 proposition>{'case': 237, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:57:46,512:INFO:L0 proposition>{'case': 238, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 21:57:49,724:INFO:L0 proposition>{'case': 238, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 22:00:17,817:INFO:L0 proposition>{'case': 239, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
