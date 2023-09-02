@@ -9,8 +9,8 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 import logging
 
-ame_api_key = '00035'
-ame_node = 'apr6'
+ame_api_key = '18574'
+ame_node = 'part2'
 
 logging.basicConfig(filename="ame_client_app.log",filemode='a',format='%(asctime)s:%(levelname)s:%(message)s',level=logging.INFO)
 
