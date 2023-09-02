@@ -38,3 +38,123 @@
 2023-09-01 21:57:46,512:INFO:L0 proposition>{'case': 238, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
 2023-09-01 21:57:49,724:INFO:L0 proposition>{'case': 238, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
 2023-09-01 22:00:17,817:INFO:L0 proposition>{'case': 239, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:03:36,512:INFO:L0 proposition>{'case': 245, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:05:52,964:INFO:L0 proposition>{'case': 246, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:06:25,988:INFO:L0 proposition>{'case': 247, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:08:55,857:INFO:L0 proposition>{'case': 253, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:09:13,866:INFO:L0 proposition>{'case': 254, 'proposition': 'This is an L0 prop', 'appearance': 'ap1 ap2', 'essence': '', 'level': 0}
+2023-09-01 23:10:15,125:WARNING:Not Found: /favicon.ico
+2023-09-01 23:12:04,101:WARNING:Not Found: /favicon.ico
+2023-09-01 23:12:42,153:INFO:L0 proposition>{'case': 259, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:13:14,082:INFO:L0 proposition>{'case': 260, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:18:12,202:INFO:L0 proposition>{'case': 262, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:20:01,190:INFO:L0 proposition>{'case': 263, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:20:41,872:INFO:L0 proposition>{'case': 264, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:24:17,510:INFO:L0 proposition>{'case': 265, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:27:01,659:INFO:L0 proposition>{'case': 266, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:27:04,456:INFO:L0 proposition>{'case': 266, 'proposition': '', 'appearance': 'undefined', 'essence': '', 'level': 0}
+2023-09-01 23:28:07,310:INFO:L0 proposition>{'case': 267, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:28:08,661:INFO:L0 proposition>{'case': 267, 'proposition': '', 'appearance': 'undefined', 'essence': '', 'level': 0}
+2023-09-01 23:29:20,376:INFO:L0 proposition>{'case': 268, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:29:33,592:INFO:L0 proposition>{'case': 269, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto ', 'essence': '', 'level': 0}
+2023-09-01 23:34:35,110:INFO:L0 proposition>{'case': 271, 'proposition': 'This recipe has these ingredients.', 'appearance': 'new ingrediets', 'essence': '', 'level': 0}
+2023-09-01 23:43:09,338:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 23:43:33,769:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/urls.py changed, reloading.
+2023-09-01 23:44:34,336:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 23:44:48,718:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-01 23:45:59,279:INFO:L0 proposition>{'case': 272, 'proposition': 'This recipe has these ingredients.', 'appearance': 'new ingrediets', 'essence': '', 'level': 0}
+2023-09-01 23:46:33,952:INFO:L0 proposition>{'case': 272, 'proposition': None, 'appearance': '', 'essence': '', 'level': 1}
+2023-09-01 23:47:46,503:WARNING:Not Found: /favicon.ico
+2023-09-01 23:48:02,139:INFO:L0 proposition>{'case': 274, 'proposition': 'This recipe has these ingredients.', 'appearance': '', 'essence': '', 'level': 0}
+2023-09-01 23:48:14,507:INFO:L0 proposition>{'case': 274, 'proposition': 'This cuisine is good', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-01 23:57:50,788:INFO:L0 proposition>{'case': 286, 'proposition': 'This recipe has these ingredients.', 'appearance': 't1 t2 t3', 'essence': '', 'level': 0}
+2023-09-01 23:58:01,549:INFO:L0 proposition>{'case': 287, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-01 23:58:23,062:INFO:L0 proposition>{'case': 288, 'proposition': 'This recipe has these ingredients.', 'appearance': 'a b c d ', 'essence': '', 'level': 0}
+2023-09-01 23:58:30,942:INFO:L0 proposition>{'case': 288, 'proposition': 'This cuisine is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-01 23:59:50,425:INFO:L0 proposition>{'case': 290, 'proposition': 'This recipe has these ingredients.', 'appearance': 'a b c', 'essence': '', 'level': 0}
+2023-09-01 23:59:53,649:INFO:L0 proposition>{'case': 290, 'proposition': 'This cuisine is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:11:09,110:INFO:L0 proposition>{'case': 300, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:11:19,334:INFO:L0 proposition>{'case': 301, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:12:03,152:INFO:L0 proposition>{'case': 302, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:12:33,536:INFO:L0 proposition>{'case': 303, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:12:41,098:INFO:L0 proposition>{'case': 303, 'proposition': 'This cuisine is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:14:15,908:INFO:L0 proposition>{'case': 304, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:14:23,948:INFO:L0 proposition>{'case': 304, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:14:49,373:INFO:L0 proposition>{'case': 305, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:15:01,349:INFO:L0 proposition>{'case': 305, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:16:29,977:INFO:L0 proposition>{'case': 311, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:16:33,968:INFO:L0 proposition>{'case': 312, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:16:37,976:INFO:L0 proposition>{'case': 312, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:19:33,422:INFO:L0 proposition>{'case': 313, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:19:44,503:INFO:L0 proposition>{'case': 314, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:20:19,016:INFO:L0 proposition>{'case': 315, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:20:28,744:INFO:L0 proposition>{'case': 316, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:22:48,156:INFO:L0 proposition>{'case': 321, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:23:05,765:INFO:L0 proposition>{'case': 321, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:23:14,694:INFO:L0 proposition>{'case': 322, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:26:17,055:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:29:50,267:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:30:00,623:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:30:05,943:ERROR:Internal Server Error: /ame_client_app/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 34, in index
+    return render(request, "ame_client_app/home.html", {"data": data, "next_action": next_action})
+  File "/usr/local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'CreateL2' not found. 'CreateL2' is not a valid view function or pattern name.
+2023-09-02 00:30:23,064:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/urls.py changed, reloading.
+2023-09-02 00:30:35,012:INFO:L0 proposition>{'case': 325, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:30:39,507:INFO:L1 S1 proposition>{'case': 325, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:31:51,077:INFO:L0 proposition>{'case': 327, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:31:53,285:INFO:L1 S1 proposition>{'case': 327, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:33:36,801:INFO:L0 proposition>{'case': 330, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:33:38,648:INFO:L1 S1 proposition>{'case': 330, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:34:55,420:INFO:L0 proposition>{'case': 333, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:34:58,235:INFO:L1 S1 proposition>{'case': 333, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:34:59,635:INFO:L1 S1 proposition>{'case': 333, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:37:45,295:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/urls.py changed, reloading.
+2023-09-02 00:38:20,736:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:39:03,153:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:39:17,499:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:39:36,877:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:39:40,187:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:39:47,519:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:40:11,937:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-02 00:40:19,781:INFO:L0 proposition>{'case': 335, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:40:32,854:INFO:L1 S2 proposition>{'case': 335, 'proposition': 'This cuisine is customer', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:40:38,918:INFO:realistic call>{'case': 335}
+2023-09-02 00:40:40,194:INFO:realistic call>{'case': 335}
+2023-09-02 00:41:45,825:INFO:realistic call>{'case': 335}
+2023-09-02 00:41:48,096:INFO:realistic call>{'case': 335}
+2023-09-02 00:41:51,272:INFO:L0 proposition>{'case': 336, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:41:57,232:INFO:L0 proposition>{'case': 337, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:42:02,113:INFO:L1 S2 proposition>{'case': 337, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:42:09,593:INFO:realistic call>{'case': 337}
+2023-09-02 00:43:38,053:INFO:L0 proposition>{'case': 338, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 00:43:57,230:INFO:L1 S2 proposition>{'case': 338, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 00:43:59,748:INFO:realistic call>{'case': 338}
+2023-09-02 00:44:27,029:INFO:realistic call>{'case': 338}

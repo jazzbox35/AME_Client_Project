@@ -58,3 +58,73 @@ def CreateL0(request):
     data = response.json()
 
     return JsonResponse(data)
+
+def CreateL1(request):
+    # Create level 1, system 1 judgment(s) and post to the server
+    case = request.GET.get('case')
+    proposition = request.GET.get('L1value')
+    api_url = 'https://' + ame_node + '.agiengine.online/sys1-proposition'
+    headers = {
+          'api-key':  ame_api_key
+      }
+    #appearance =  request.GET.get('appearance')
+    data = {
+      "case": int(case),
+      "proposition" :  proposition,
+      "appearance"  :  "",
+      "essence"     :  "",
+      "level"       :  1
+    }
+    logging.info("L1 S1 proposition>" + str(data))
+    try:
+        response = requests.put(api_url, headers=headers, json=data)
+    except:
+        return HttpResponse("Cannot communicate with AME server")
+    data = response.json()
+
+    return JsonResponse(data)
+
+def CreateL2(request):
+    # Create level 1, system 2 judgment(s) and post to the server
+    case = request.GET.get('case')
+    proposition = request.GET.get('L1value')
+    api_url = 'https://' + ame_node + '.agiengine.online/sys2-proposition'
+    headers = {
+          'api-key':  ame_api_key
+      }
+    #appearance =  request.GET.get('appearance')
+    data = {
+      "case": int(case),
+      "proposition" :  proposition,
+      "appearance"  :  "",
+      "essence"     :  "",
+      "level"       :  1
+    }
+    logging.info("L1 S2 proposition>" + str(data))
+    try:
+        response = requests.put(api_url, headers=headers, json=data)
+    except:
+        return HttpResponse("Cannot communicate with AME server")
+    data = response.json()
+
+    return JsonResponse(data)
+
+def CreateL3(request):
+    # Create level 1, system 2 judgment(s) and post to the server
+    case = request.GET.get('case')
+    api_url = 'https://' + ame_node + '.agiengine.online/sys2-realistic'
+    headers = {
+          'api-key':  ame_api_key
+      }
+    #appearance =  request.GET.get('appearance')
+    data = {
+      "case": int(case),
+    }
+    logging.info("realistic call>" + str(data))
+    try:
+        response = requests.put(api_url, headers=headers, json=data)
+    except:
+        return HttpResponse("Cannot communicate with AME server")
+    data = response.json()
+
+    return JsonResponse(data)

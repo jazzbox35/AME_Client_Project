@@ -10,12 +10,62 @@
         fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}&L0appear=${encodeURIComponent(L0appear)}`)
             .then(response => response.json())
             .then(data => {
-              alert(data.message);
+              messageBox.innerText = data['message'];
+              B0.disabled = true;
+              B1.disabled = false;
             })
             .catch(error => {
               alert("An error occurred:", error);
             });
-    }
+            
+          }   
+    function ajaxCallCreateL1() {
+        messageBox.innerText = "S1-L1 Default Generated"
+        L1.value = "This cuisine is default"
+              B1.disabled = true;
+              B2.disabled = false;
+              B3.disabled = false;
+          }   
+    function ajaxCallCreateL2(case_value,L1value) {
+        fetch(`{% url "CreateL1" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
+            .then(response => response.json())
+            .then(data => {
+              messageBox.innerText = data['message'];
+              B2.disabled = true;
+    
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
+        
+          }  
+    function ajaxCallCreateL3(case_value,L1value) {
+        fetch(`{% url "CreateL2" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
+            .then(response => response.json())
+            .then(data => {
+              messageBox.innerText = data['message'];
+              B2.disabled = true;
+              B3.disabled = true;
+              B4.disabled = false;
+    
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
+        
+          }  
+    function ajaxCallCreateL4(case_value) {
+        fetch(`{% url "CreateL3" %}?case=${case_value}`)
+            .then(response => response.json())
+            .then(data => {
+              messageBox.innerText = data['decision'] + " " + data['judgments'];
+    
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
+        
+          }  
     
   </script>
   
@@ -34,12 +84,15 @@
 <center>
     <h1>
       <div class="message-box">
-        <p> {{ data.case }}</p>
+        <p>Case Number {{ data.case }}</p>
       </div>
-      
-      
     </h1>
-
+    <div class="message-box">
+      <p></p>
+    </div>
+    
+    <div id="messageBox"></div>
+  
 </center>
 <!--<label for="L1">Level 1 Proposition:</label>
 <input type="text" id="L1" name="L1" placeholder=""> -->
@@ -49,13 +102,44 @@
 
 {% if next_action  == 'input_terms' %}
     <label for="L0">Level 0 Proposition:</label>
-    <input type="text" id="L0" name="L0" placeholder="This recipe has these ingredients.">
+    <input type="text" id="L0" name="L0" value="This recipe has these ingredients." readonly>
     <br>
     <label for="L0appear">Level 0 Appearance:</label>
     <input type="text" id="L0appear" name="L0appear" placeholder="Enter terms...">
     <br>
-    <button onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">CREATE L0 PROPOSITION</button> 
+    <label for="L1">Level 1 Proposition:</label>
+    <input type="text" id="L1" name="L1" placeholder="">
+    <br>
+    <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">ADD S1-L0 PROPOSITION TO CASE</button> 
+    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE S1-L1 DEFAULT</button> 
+    <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)">ADD S1-L1 DEFAULT TO CASE</button> 
+    <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
+    <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">JUDGE!</button> 
 
+    <button id="refreshButton">NEW CASE</button>
+
+    <script>
+      // Get button element
+      const refreshButton = document.getElementById('refreshButton');
+      // Add click handler
+      refreshButton.addEventListener('click', function() {
+          // Reload page
+          L0appear.value = "Enter terms..."
+          L1.value = ""
+          location.reload();
+
+          });
+    
+      B1.disabled = true;
+      B2.disabled = true;
+      B3.disabled = true;
+      B4.disabled = true;
+      // Get new message box 
+      const messageBox = document.getElementById('messageBox');
+
+      // Set message 
+      messageBox.innerText = 'Start/Reset';
+    </script>
 {% elif state == 'test' %}
     <button onclick="ajaxCallTrain('{{data.case}}',L0.value)">SET CASE TO TRAIN</button> 
 
