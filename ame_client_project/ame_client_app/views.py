@@ -128,3 +128,41 @@ def CreateL3(request):
     data = response.json()
 
     return JsonResponse(data)
+
+def CreateL4(request):
+    # Retract the most recent proposition
+    case = request.GET.get('case')
+    api_url = 'https://' + ame_node + '.agiengine.online/retract_that'
+    headers = {
+          'api-key':  ame_api_key
+      }
+    #appearance =  request.GET.get('appearance')
+    data = {
+      "case": int(case),
+    }
+    logging.info("retract that>" + str(data))
+    try:
+        response = requests.put(api_url, headers=headers, json=data)
+    except:
+        return HttpResponse("Cannot communicate with AME server")
+    data = response.json()
+    return JsonResponse(data)
+
+def CreateL5(request):
+    # Mark case for training -- but no further updates allowed
+    case = request.GET.get('case')
+    api_url = 'https://' + ame_node + '.agiengine.online/traincase'
+    headers = {
+          'api-key':  ame_api_key
+      }
+    #appearance =  request.GET.get('appearance')
+    data = {
+      "case": int(case),
+    }
+    logging.info("train case>" + str(data))
+    try:
+        response = requests.put(api_url, headers=headers, json=data)
+    except:
+        return HttpResponse("Cannot communicate with AME server")
+    data = response.json()
+    return JsonResponse(data)

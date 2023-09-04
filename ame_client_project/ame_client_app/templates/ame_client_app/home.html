@@ -21,7 +21,7 @@
           }   
     function ajaxCallCreateL1() {
         messageBox.innerText = "S1-L1 Default Generated"
-        L1.value = "This cuisine is default"
+        L1.value = "This recipe is..."
               B1.disabled = true;
               B2.disabled = false;
               B3.disabled = false;
@@ -59,14 +59,36 @@
             .then(response => response.json())
             .then(data => {
               messageBox.innerText = data['decision'] + " " + data['judgments'];
-    
+              B4.disabled = false;    
             })
             .catch(error => {
               alert("An error occurred:", error);
             });
         
           }  
-    
+    function ajaxRetractThat(case_value,L1value) {
+        fetch(`{% url "CreateL4" %}?case=${case_value}`)
+            .then(response => response.json())
+            .then(data => {
+              messageBox.innerText = data['message'];
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
+        
+          }  
+    function ajaxTrain(case_value,L1value) {
+        fetch(`{% url "CreateL5" %}?case=${case_value}`)
+            .then(response => response.json())
+            .then(data => {
+              messageBox.innerText = data['message'];
+              
+            })
+            .catch(error => {
+              alert("An error occurred:", error);
+            });
+        
+          }  
   </script>
   
   <style>
@@ -81,24 +103,19 @@
 <!-- you must pass at least the "data" and "next_action" JSON fields-->
 
 <body>
+    
+
 <center>
     <h1>
       <div class="message-box">
         <p>Case Number {{ data.case }}</p>
       </div>
     </h1>
-    <div class="message-box">
-      <p></p>
-    </div>
     
     <div id="messageBox"></div>
   
 </center>
-<!--<label for="L1">Level 1 Proposition:</label>
-<input type="text" id="L1" name="L1" placeholder=""> -->
-<!--let L0value = document.getElementById('L0').value; -->
-<!--let caseLength = case_value.length;
-    alert('Case length: ' + caseLength); -->
+
 
 {% if next_action  == 'input_terms' %}
     <label for="L0">Level 0 Proposition:</label>
@@ -111,10 +128,12 @@
     <input type="text" id="L1" name="L1" placeholder="">
     <br>
     <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">ADD S1-L0 PROPOSITION TO CASE</button> 
-    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE S1-L1 DEFAULT</button> 
+    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE QUICK S1-L1</button> 
     <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)">ADD S1-L1 DEFAULT TO CASE</button> 
     <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
-    <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">JUDGE!</button> 
+    <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">DELIBERATE S1-L1</button> 
+    <button id="B5", onclick="ajaxRetractThat('{{data.case}}')">RETRACT LAST PROPOSITION</button> 
+    <button id="B6", onclick="ajaxTrain('{{data.case}}')">TRAIN CASE</button> 
 
     <button id="refreshButton">NEW CASE</button>
 
@@ -139,12 +158,33 @@
 
       // Set message 
       messageBox.innerText = 'Start/Reset';
-    </script>
+
+      
+</script>
+
+
 {% elif state == 'test' %}
     <button onclick="ajaxCallTrain('{{data.case}}',L0.value)">SET CASE TO TRAIN</button> 
 
 {% endif %}  
 
+
+<div class="message-box" ID="message-box2">
+      Enter terms
+      </div>
+
+  
+<script>
+      
+      document.addEventListener('keydown', function(event) {
+      const messageBox2 = document.getElementById('message-box2');
+      if (messageBox2 && event.key === 'F5') {
+        refreshButton.click()
+      } else if (messageBox2) {
+        messageBox2.innerText = "";
+      }
+        });
+</script>
 
 
 </body>

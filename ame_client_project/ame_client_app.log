@@ -158,3 +158,188 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'CreateL2' not found. 'Create
 2023-09-02 00:43:57,230:INFO:L1 S2 proposition>{'case': 338, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
 2023-09-02 00:43:59,748:INFO:realistic call>{'case': 338}
 2023-09-02 00:44:27,029:INFO:realistic call>{'case': 338}
+2023-09-02 05:00:55,697:INFO:L0 proposition>{'case': 3, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic', 'essence': '', 'level': 0}
+2023-09-02 05:01:50,184:INFO:L1 S2 proposition>{'case': 3, 'proposition': 'this recipe is italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 05:01:52,772:INFO:realistic call>{'case': 3}
+2023-09-02 05:03:33,988:INFO:realistic call>{'case': 3}
+2023-09-02 05:03:42,758:INFO:realistic call>{'case': 3}
+2023-09-02 05:04:43,281:INFO:L0 proposition>{'case': 4, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic', 'essence': '', 'level': 0}
+2023-09-02 05:05:01,987:INFO:L1 S2 proposition>{'case': 4, 'proposition': 'this dish is mexican', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 05:05:04,583:INFO:realistic call>{'case': 4}
+2023-09-02 05:05:21,811:INFO:realistic call>{'case': 4}
+2023-09-02 05:08:33,743:INFO:L0 proposition>{'case': 6, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic', 'essence': '', 'level': 0}
+2023-09-02 05:08:57,219:INFO:L1 S2 proposition>{'case': 6, 'proposition': 'this recipe is mexican', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 05:08:59,023:INFO:realistic call>{'case': 6}
+2023-09-02 05:11:23,920:INFO:L0 proposition>{'case': 7, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic', 'essence': '', 'level': 0}
+2023-09-02 05:11:39,887:INFO:L1 S2 proposition>{'case': 7, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 05:11:53,725:INFO:realistic call>{'case': 7}
+2023-09-02 05:13:11,110:INFO:L0 proposition>{'case': 8, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-02 05:13:28,839:INFO:L1 S2 proposition>{'case': 8, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-02 05:13:31,777:INFO:realistic call>{'case': 8}
+2023-09-02 16:15:53,237:WARNING:Not Found: /favicon.ico
+2023-09-03 22:24:28,883:INFO:L0 proposition>{'case': 1, 'proposition': 'This recipe has these ingredients.', 'appearance': '', 'essence': '', 'level': 0}
+2023-09-03 22:24:41,965:INFO:L1 S2 proposition>{'case': 1, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 22:24:44,801:INFO:realistic call>{'case': 1}
+2023-09-03 22:25:08,854:INFO:L0 proposition>{'case': 2, 'proposition': 'This recipe has these ingredients.', 'appearance': 'apple rice honey', 'essence': '', 'level': 0}
+2023-09-03 22:25:27,767:INFO:L1 S2 proposition>{'case': 2, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 22:25:30,110:INFO:realistic call>{'case': 2}
+2023-09-03 22:36:23,144:INFO:L0 proposition>{'case': 3, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic ', 'essence': '', 'level': 0}
+2023-09-03 22:36:40,129:INFO:L1 S2 proposition>{'case': 3, 'proposition': 'This recipe is Italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 22:36:42,651:INFO:realistic call>{'case': 3}
+2023-09-03 22:39:27,109:INFO:realistic call>{'case': 3}
+2023-09-03 22:44:18,158:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 22:44:44,580:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/urls.py changed, reloading.
+2023-09-03 22:53:09,119:INFO:retract that>{'case': 4}
+2023-09-03 22:53:12,563:INFO:L0 proposition>{'case': 4, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic ', 'essence': '', 'level': 0}
+2023-09-03 22:53:26,292:INFO:L1 S1 proposition>{'case': 4, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 22:53:35,327:INFO:retract that>{'case': 4}
+2023-09-03 22:53:35,431:ERROR:Internal Server Error: /ame_client_app/CreateL4
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 150, in CreateL4
+    return JsonResponse(data)
+  File "/usr/local/lib/python3.8/site-packages/django/http/response.py", line 741, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2023-09-03 23:00:11,877:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:00:17,258:INFO:retract that>{'case': 4}
+2023-09-03 23:00:17,342:INFO:OK>[{'message': 'from case #4 proposition #1 retracted', 'info': []}]
+2023-09-03 23:00:17,359:ERROR:Internal Server Error: /ame_client_app/CreateL4
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 150, in CreateL4
+    return JsonResponse(data)
+  File "/usr/local/lib/python3.8/site-packages/django/http/response.py", line 741, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2023-09-03 23:05:57,040:INFO:L1 S2 proposition>{'case': 4, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 23:14:02,937:INFO:L0 proposition>{'case': 6, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto garlic ', 'essence': '', 'level': 0}
+2023-09-03 23:14:06,369:INFO:retract that>{'case': 6}
+2023-09-03 23:14:06,477:INFO:OK>[{'message': 'from case #6 proposition #1 retracted', 'info': '[]'}]
+2023-09-03 23:14:06,491:ERROR:Internal Server Error: /ame_client_app/CreateL4
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 150, in CreateL4
+    return JsonResponse(data)
+  File "/usr/local/lib/python3.8/site-packages/django/http/response.py", line 741, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2023-09-03 23:17:01,301:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:17:05,848:INFO:retract that>{'case': 6}
+2023-09-03 23:17:05,951:INFO:OK>{'message': 'OK!'}
+2023-09-03 23:17:24,729:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:17:31,185:INFO:retract that>{'case': 6}
+2023-09-03 23:17:31,286:INFO:OK>{'message': 'OK!', 'info': '[]'}
+2023-09-03 23:17:40,486:INFO:L0 proposition>{'case': 7, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:17:47,264:INFO:L1 S2 proposition>{'case': 7, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 23:17:50,576:INFO:retract that>{'case': 7}
+2023-09-03 23:17:50,605:INFO:OK>{'message': 'OK!', 'info': '[]'}
+2023-09-03 23:18:08,271:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:18:14,114:INFO:L0 proposition>{'case': 8, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:18:17,176:INFO:retract that>{'case': 8}
+2023-09-03 23:18:17,198:INFO:OK>{'message': 'OK!', 'info': '[]'}
+2023-09-03 23:18:44,748:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:18:53,729:INFO:L0 proposition>{'case': 9, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:18:56,695:INFO:retract that>{'case': 9}
+2023-09-03 23:20:27,508:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:20:37,934:INFO:L0 proposition>{'case': 10, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:20:40,462:INFO:retract that>{'case': 10}
+2023-09-03 23:20:40,482:INFO:bad>[{'message': 'from case #10 proposition #1 retracted', 'info': '[]'}]
+2023-09-03 23:20:40,482:INFO:sending>{'message': 'OK!', 'info': '[]'}
+2023-09-03 23:21:37,127:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:21:49,485:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:21:54,713:INFO:L0 proposition>{'case': 11, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:21:57,334:INFO:retract that>{'case': 11}
+2023-09-03 23:21:57,354:INFO:bad>[{'message': 'from case #11 proposition #1 retracted', 'info': '[]'}]
+2023-09-03 23:21:57,354:INFO:sending>[{'message': 'OK!', 'info': '[]'}]
+2023-09-03 23:21:57,369:ERROR:Internal Server Error: /ame_client_app/CreateL4
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 152, in CreateL4
+    return JsonResponse(data)
+  File "/usr/local/lib/python3.8/site-packages/django/http/response.py", line 741, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2023-09-03 23:38:22,721:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-03 23:38:34,125:INFO:L0 proposition>{'case': 13, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:38:37,830:INFO:retract that>{'case': 13}
+2023-09-03 23:38:37,933:INFO:sending>{'message': 'OK'}
+2023-09-03 23:45:00,540:INFO:L0 proposition>{'case': 14, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:45:03,483:INFO:retract that>{'case': 14}
+2023-09-03 23:45:03,574:INFO:sending>{'message': 'from case #14 proposition #1 retracted', 'info': '[]'}
+2023-09-03 23:47:48,006:INFO:L0 proposition>{'case': 15, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-03 23:48:11,963:INFO:L1 S1 proposition>{'case': 15, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-03 23:48:15,688:INFO:retract that>{'case': 15}
+2023-09-03 23:48:15,708:INFO:sending>{'message': 'from case #15 proposition #2 retracted', 'info': [[['2023-09-03T16:47:48.165432', 'sys1_proposition load', 'This', 'recipe', 'has', 'these', 'ingredients'], [[False, [1], False], [False, [[3, []]], False], [False, [[3, ['This', 'recipe', 'has', 'these', 'ingredients']]], False], [False, False, False], [False, False, False], [False, False, False], [False, False, False], [False, ['Enter', 'terms...'], False], [False, False, False], [False, ['bake', 'crust', 'spice', 'tart', 'butter', 'aroma', 'crumble', 'sugar', 'juicy', 'cinnamon', 'fresh', 'sweet', 'apple'], False], [False, False, False], [False, False, False], [False, False, False]]]]}
+2023-09-03 23:48:17,888:INFO:retract that>{'case': 15}
+2023-09-03 23:48:17,975:INFO:sending>{'message': 'from case #15 proposition #1 retracted', 'info': []}
+2023-09-03 23:50:47,379:INFO:L0 proposition>{'case': 16, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 00:01:57,726:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-04 00:02:33,171:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/urls.py changed, reloading.
+2023-09-04 00:04:46,895:INFO:L0 proposition>{'case': 17, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 00:05:01,886:INFO:L1 S1 proposition>{'case': 17, 'proposition': 'This cuisine is default', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 00:05:06,401:INFO:train case>{'case': 17}
+2023-09-04 00:11:37,897:INFO:L0 proposition>{'case': 18, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 00:11:45,506:INFO:train case>{'case': 18}
+2023-09-04 00:15:40,260:INFO:L0 proposition>{'case': 19, 'proposition': 'This recipe has these ingredients.', 'appearance': 'stuff in here', 'essence': '', 'level': 0}
+2023-09-04 00:16:18,236:INFO:train case>{'case': 21}
+2023-09-04 00:17:47,498:INFO:L0 proposition>{'case': 21, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 00:20:47,072:INFO:L0 proposition>{'case': 22, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spagetti pesto', 'essence': '', 'level': 0}
+2023-09-04 00:21:03,104:INFO:L1 S2 proposition>{'case': 22, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 00:21:05,940:INFO:realistic call>{'case': 22}
+2023-09-04 00:26:21,799:INFO:realistic call>{'case': 22}
+2023-09-04 00:26:30,448:INFO:realistic call>{'case': 22}
+2023-09-04 00:27:44,668:INFO:L0 proposition>{'case': 24, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 00:28:15,815:INFO:L0 proposition>{'case': 25, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti pesto sausage onion', 'essence': '', 'level': 0}
+2023-09-04 00:28:33,170:INFO:L1 S2 proposition>{'case': 25, 'proposition': 'cuisine Type is Italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 00:28:35,476:INFO:realistic call>{'case': 25}
+2023-09-04 00:28:40,762:INFO:train case>{'case': 25}
+2023-09-04 00:29:15,654:INFO:L0 proposition>{'case': 26, 'proposition': 'This recipe has these ingredients.', 'appearance': 'sausage pickles salt rice', 'essence': '', 'level': 0}
+2023-09-04 00:29:36,598:INFO:L1 S2 proposition>{'case': 26, 'proposition': 'Cuisine type is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 00:29:39,639:INFO:realistic call>{'case': 26}
+2023-09-04 00:39:21,608:INFO:L0 proposition>{'case': 30, 'proposition': 'This recipe has these ingredients.', 'appearance': 'sausage pickles salt rice', 'essence': '', 'level': 0}
+2023-09-04 00:39:38,506:INFO:train case>{'case': 32}
+2023-09-04 01:00:23,109:INFO:train case>{'case': 43}
+2023-09-04 01:00:25,663:INFO:retract that>{'case': 43}
+2023-09-04 01:00:27,651:INFO:realistic call>{'case': 43}
+2023-09-04 01:00:29,605:INFO:L1 S2 proposition>{'case': 43, 'proposition': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 01:00:36,703:INFO:L0 proposition>{'case': 43, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 01:57:14,746:INFO:L0 proposition>{'case': 53, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 01:58:29,043:WARNING:Not Found: /favicon.ico
+2023-09-04 02:08:06,999:WARNING:Not Found: /favicon.ico
+2023-09-04 02:20:24,969:INFO:L0 proposition>{'case': 81, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 02:20:30,762:INFO:L1 S1 proposition>{'case': 81, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 02:21:27,650:INFO:L0 proposition>{'case': 83, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pinapple olive cherry mango creme', 'essence': '', 'level': 0}
+2023-09-04 02:21:40,365:INFO:L1 S2 proposition>{'case': 83, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 02:21:44,627:INFO:realistic call>{'case': 83}
+2023-09-04 02:21:50,167:INFO:retract that>{'case': 83}
+2023-09-04 02:23:13,181:INFO:L0 proposition>{'case': 85, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 02:23:35,957:INFO:L0 proposition>{'case': 87, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 02:23:40,650:INFO:retract that>{'case': 87}
+2023-09-04 02:24:07,369:INFO:L0 proposition>{'case': 88, 'proposition': 'This recipe has these ingredients.', 'appearance': 'rice beans tortilla tabasco', 'essence': '', 'level': 0}
+2023-09-04 02:24:20,870:INFO:L1 S2 proposition>{'case': 88, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 02:24:23,689:INFO:realistic call>{'case': 88}
+2023-09-04 02:24:26,430:INFO:retract that>{'case': 88}
+2023-09-04 02:24:57,422:INFO:train case>{'case': 89}
+2023-09-04 02:28:49,411:INFO:L0 proposition>{'case': 93, 'proposition': 'This recipe has these ingredients.', 'appearance': 'garum masala, tandoori, ric', 'essence': '', 'level': 0}
+2023-09-04 02:28:57,058:INFO:L1 S2 proposition>{'case': 93, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 02:28:59,761:INFO:realistic call>{'case': 93}
+2023-09-04 02:29:11,785:INFO:retract that>{'case': 93}
+2023-09-04 02:29:44,126:INFO:L0 proposition>{'case': 94, 'proposition': 'This recipe has these ingredients.', 'appearance': 'garum masala, tandoori, rice', 'essence': '', 'level': 0}
+2023-09-04 02:29:50,333:INFO:retract that>{'case': 94}
+2023-09-04 02:30:17,612:INFO:L0 proposition>{'case': 95, 'proposition': 'This recipe has these ingredients.', 'appearance': 'garum masala, tandoori, rice', 'essence': '', 'level': 0}
+2023-09-04 02:30:27,362:INFO:L1 S2 proposition>{'case': 95, 'proposition': 'This recipe is Indian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 02:30:32,866:INFO:realistic call>{'case': 95}
+2023-09-04 02:30:38,102:INFO:train case>{'case': 95}
