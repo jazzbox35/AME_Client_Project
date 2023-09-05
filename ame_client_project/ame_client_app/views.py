@@ -88,6 +88,7 @@ def CreateL2(request):
     # Create level 1, system 2 judgment(s) and post to the server
     case = request.GET.get('case')
     proposition = request.GET.get('L1value')
+    desired = request.GET.get('L1Desired')
     api_url = 'https://' + ame_node + '.agiengine.online/sys2-proposition'
     headers = {
           'api-key':  ame_api_key
@@ -96,6 +97,7 @@ def CreateL2(request):
     data = {
       "case": int(case),
       "proposition" :  proposition,
+      "desired"     :  desired,
       "appearance"  :  "",
       "essence"     :  "",
       "level"       :  1

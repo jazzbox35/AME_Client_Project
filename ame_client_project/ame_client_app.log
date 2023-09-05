@@ -343,3 +343,91 @@ TypeError: In order to allow non-dict objects to be serialized set the safe para
 2023-09-04 02:30:27,362:INFO:L1 S2 proposition>{'case': 95, 'proposition': 'This recipe is Indian', 'appearance': '', 'essence': '', 'level': 1}
 2023-09-04 02:30:32,866:INFO:realistic call>{'case': 95}
 2023-09-04 02:30:38,102:INFO:train case>{'case': 95}
+2023-09-04 16:47:56,475:INFO:L0 proposition>{'case': 2, 'proposition': 'This recipe has these ingredients.', 'appearance': '', 'essence': '', 'level': 0}
+2023-09-04 16:48:24,606:INFO:L0 proposition>{'case': 3, 'proposition': 'This recipe has these ingredients.', 'appearance': 'butter cheese liver rice', 'essence': '', 'level': 0}
+2023-09-04 16:48:37,275:INFO:L1 S2 proposition>{'case': 3, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 16:48:41,142:INFO:realistic call>{'case': 3}
+2023-09-04 16:48:47,511:INFO:retract that>{'case': 3}
+2023-09-04 16:48:56,194:INFO:L0 proposition>{'case': 4, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-04 16:48:59,879:INFO:retract that>{'case': 4}
+2023-09-04 16:49:32,620:INFO:L0 proposition>{'case': 5, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce rice pork', 'essence': '', 'level': 0}
+2023-09-04 16:49:44,900:INFO:L1 S2 proposition>{'case': 5, 'proposition': 'This recipe is chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 16:49:48,713:INFO:realistic call>{'case': 5}
+2023-09-04 16:50:38,290:INFO:L0 proposition>{'case': 6, 'proposition': 'This recipe has these ingredients.', 'appearance': 'bread cheese mayonaise mustard pepperoni', 'essence': '', 'level': 0}
+2023-09-04 16:50:51,854:INFO:L1 S2 proposition>{'case': 6, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-04 16:50:55,441:INFO:realistic call>{'case': 6}
+2023-09-05 18:01:00,731:WARNING:Not Found: /favicon.ico
+2023-09-05 18:01:23,503:INFO:L0 proposition>{'case': 1, 'proposition': 'This recipe has these ingredients.', 'appearance': 'lettuce cheese onions olive', 'essence': '', 'level': 0}
+2023-09-05 18:01:36,584:INFO:L1 S2 proposition>{'case': 1, 'proposition': 'The cuisine type is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:01:39,368:INFO:realistic call>{'case': 1}
+2023-09-05 18:07:50,276:INFO:L0 proposition>{'case': 3, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 18:12:59,821:INFO:L0 proposition>{'case': 5, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti meatballs onion sausage', 'essence': '', 'level': 0}
+2023-09-05 18:13:19,702:INFO:L1 S2 proposition>{'case': 5, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:13:22,638:INFO:realistic call>{'case': 5}
+2023-09-05 18:14:31,609:INFO:retract that>{'case': 5}
+2023-09-05 18:15:22,770:INFO:L0 proposition>{'case': 6, 'proposition': 'This recipe has these ingredients.', 'appearance': 'spaghetti meatballs onion pesto olive garlic', 'essence': '', 'level': 0}
+2023-09-05 18:15:30,786:INFO:L1 S2 proposition>{'case': 6, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:15:33,490:INFO:realistic call>{'case': 6}
+2023-09-05 18:16:07,970:INFO:L0 proposition>{'case': 7, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork ', 'essence': '', 'level': 0}
+2023-09-05 18:16:24,267:INFO:L1 S2 proposition>{'case': 7, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:16:26,467:INFO:realistic call>{'case': 7}
+2023-09-05 18:18:00,150:INFO:L0 proposition>{'case': 8, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork ', 'essence': '', 'level': 0}
+2023-09-05 18:18:20,846:INFO:L1 S2 proposition>{'case': 8, 'proposition': 'Cuisine type is Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:18:24,511:INFO:realistic call>{'case': 8}
+2023-09-05 18:18:41,744:INFO:L0 proposition>{'case': 9, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork ', 'essence': '', 'level': 0}
+2023-09-05 18:18:52,744:INFO:L1 S2 proposition>{'case': 9, 'proposition': 'Cuisine type is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 18:18:54,719:INFO:realistic call>{'case': 9}
+2023-09-05 19:28:57,381:INFO:L0 proposition>{'case': 12, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice ', 'essence': '', 'level': 0}
+2023-09-05 19:29:06,788:INFO:L1 S2 proposition>{'case': 12, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 19:29:08,683:INFO:realistic call>{'case': 12}
+2023-09-05 19:34:52,935:INFO:L0 proposition>{'case': 14, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice ', 'essence': '', 'level': 0}
+2023-09-05 19:35:03,958:INFO:L1 S2 proposition>{'case': 14, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 19:35:07,711:INFO:realistic call>{'case': 14}
+2023-09-05 19:37:03,588:INFO:L0 proposition>{'case': 15, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice ', 'essence': '', 'level': 0}
+2023-09-05 19:37:17,667:INFO:L1 S2 proposition>{'case': 15, 'proposition': None, 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:01:11,529:INFO:L0 proposition>{'case': 16, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice ', 'essence': '', 'level': 0}
+2023-09-05 20:01:33,785:INFO:L1 S2 proposition>{'case': 16, 'proposition': None, 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:05:15,777:INFO:L0 proposition>{'case': 17, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice ', 'essence': '', 'level': 0}
+2023-09-05 20:05:22,721:INFO:L1 S1 proposition>{'case': 17, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:05:29,016:INFO:train case>{'case': 17}
+2023-09-05 20:05:46,282:INFO:L0 proposition>{'case': 18, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:06:01,018:INFO:L1 S2 proposition>{'case': 18, 'proposition': 'This recipe is Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:06:03,194:INFO:realistic call>{'case': 18}
+2023-09-05 20:08:40,951:INFO:L0 proposition>{'case': 19, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:08:51,943:INFO:L1 S2 proposition>{'case': 19, 'proposition': '?', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:08:56,087:INFO:realistic call>{'case': 19}
+2023-09-05 20:10:15,402:INFO:L0 proposition>{'case': 20, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:10:26,777:INFO:L1 S2 proposition>{'case': 20, 'proposition': 'This recipe is Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:10:29,746:INFO:realistic call>{'case': 20}
+2023-09-05 20:10:32,162:INFO:realistic call>{'case': 20}
+2023-09-05 20:11:53,035:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-05 20:12:16,454:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-05 20:12:20,788:INFO:/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py changed, reloading.
+2023-09-05 20:12:44,599:INFO:L0 proposition>{'case': 21, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:13:03,367:INFO:L1 S2 proposition>{'case': 21, 'proposition': 'This recipe is Chinese', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:13:23,481:INFO:realistic call>{'case': 21}
+2023-09-05 20:14:29,842:INFO:L0 proposition>{'case': 23, 'proposition': 'This recipe has these ingredients.', 'appearance': 'This recipe is...', 'essence': '', 'level': 0}
+2023-09-05 20:14:32,682:INFO:retract that>{'case': 23}
+2023-09-05 20:14:54,099:INFO:L0 proposition>{'case': 24, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:15:15,331:INFO:L1 S2 proposition>{'case': 24, 'proposition': 'This recipe is...', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:15:17,331:INFO:realistic call>{'case': 24}
+2023-09-05 20:15:50,876:INFO:L0 proposition>{'case': 26, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:16:19,213:INFO:L1 S2 proposition>{'case': 26, 'proposition': 'This recipe is Chinese', 'desired': 'Italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:16:32,495:INFO:realistic call>{'case': 26}
+2023-09-05 20:17:06,823:INFO:L0 proposition>{'case': 27, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:17:16,903:INFO:L1 S2 proposition>{'case': 27, 'proposition': 'This recipe is chinese', 'desired': 'good', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:17:19,214:INFO:realistic call>{'case': 27}
+2023-09-05 20:31:22,178:INFO:realistic call>{'case': 27}
+2023-09-05 20:31:26,935:INFO:realistic call>{'case': 27}
+2023-09-05 20:31:48,498:INFO:L0 proposition>{'case': 28, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:31:57,882:INFO:L1 S2 proposition>{'case': 28, 'proposition': 'This recipe is good', 'desired': 'good', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:31:59,699:INFO:realistic call>{'case': 28}
+2023-09-05 20:33:00,901:INFO:L0 proposition>{'case': 29, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:33:14,877:INFO:L1 S2 proposition>{'case': 29, 'proposition': 'This recipe is chinese', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:33:20,981:INFO:realistic call>{'case': 29}
+2023-09-05 20:34:06,982:INFO:L0 proposition>{'case': 30, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:34:29,159:INFO:L1 S2 proposition>{'case': 30, 'proposition': '?', 'desired': 'chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:34:31,063:INFO:realistic call>{'case': 30}
+2023-09-05 20:38:26,135:INFO:L0 proposition>{'case': 31, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:38:50,007:INFO:L1 S2 proposition>{'case': 31, 'proposition': 'This recipe is very Chinese', 'desired': 'very chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:38:51,807:INFO:realistic call>{'case': 31}

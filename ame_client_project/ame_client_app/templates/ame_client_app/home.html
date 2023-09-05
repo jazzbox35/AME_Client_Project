@@ -39,8 +39,8 @@
             });
         
           }  
-    function ajaxCallCreateL3(case_value,L1value) {
-        fetch(`{% url "CreateL2" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
+    function ajaxCallCreateL3(case_value,L1value,L1Desired) {
+        fetch(`{% url "CreateL2" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}&L1Desired=${encodeURIComponent(L1Desired)}`)
             .then(response => response.json())
             .then(data => {
               messageBox.innerText = data['message'];
@@ -127,10 +127,13 @@
     <label for="L1">Level 1 Proposition:</label>
     <input type="text" id="L1" name="L1" placeholder="">
     <br>
+    <label for="L1Desired">Level 1 Desired Terms:</label>
+    <input type="text" id="L1Desired" name="L1Desired" placeholder="">
+    <br>
     <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">ADD S1-L0 PROPOSITION TO CASE</button> 
     <button id="B1", onclick="ajaxCallCreateL1()">GENERATE QUICK S1-L1</button> 
     <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)">ADD S1-L1 DEFAULT TO CASE</button> 
-    <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
+    <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value,L1Desired.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
     <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">DELIBERATE S1-L1</button> 
     <button id="B5", onclick="ajaxRetractThat('{{data.case}}')">RETRACT LAST PROPOSITION</button> 
     <button id="B6", onclick="ajaxTrain('{{data.case}}')">TRAIN CASE</button> 
