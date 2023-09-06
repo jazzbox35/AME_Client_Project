@@ -6,13 +6,27 @@
 
   
   <script>
+    function saveValues() {
+     // Save values in case of retract, should be an array but oh well
+        B0ValueSaved = B0.value;
+        B1ValueSaved = B1.value;
+        B2ValueSaved = B2.value;
+        B3ValueSaved = B3.value;
+        B4ValueSaved = B4.value;
+        B5ValueSaved = B5.value;
+        B6ValueSaved = B6.value;
+    }
+
     function ajaxCallCreateL0(case_value,L0value,L0appear) {
+        saveValues()
         fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}&L0appear=${encodeURIComponent(L0appear)}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['message'];
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " + data['message'];
               B0.disabled = true;
               B1.disabled = false;
+              B3.disabled = false;
             })
             .catch(error => {
               alert("An error occurred:", error);
@@ -20,6 +34,8 @@
             
           }   
     function ajaxCallCreateL1() {
+        saveValues()
+        messageBox.style.color = 'green'
         messageBox.innerText = "S1-L1 Default Generated"
         L1.value = "This recipe is..."
               B1.disabled = true;
@@ -27,10 +43,12 @@
               B3.disabled = false;
           }   
     function ajaxCallCreateL2(case_value,L1value) {
+        saveValues()
         fetch(`{% url "CreateL1" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['message'];
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " + data['message'];
               B2.disabled = true;
     
             })
@@ -40,10 +58,12 @@
         
           }  
     function ajaxCallCreateL3(case_value,L1value,L1Desired) {
+        saveValues()
         fetch(`{% url "CreateL2" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}&L1Desired=${encodeURIComponent(L1Desired)}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['message'];
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " + data['message'];
               B2.disabled = true;
               B3.disabled = true;
               B4.disabled = false;
@@ -55,10 +75,12 @@
         
           }  
     function ajaxCallCreateL4(case_value) {
+        saveValues()
         fetch(`{% url "CreateL3" %}?case=${case_value}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['decision'] + " " + data['judgments'];
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " + data['decision'] + " " + data['judgments'];
               B4.disabled = false;    
             })
             .catch(error => {
@@ -70,19 +92,30 @@
         fetch(`{% url "CreateL4" %}?case=${case_value}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['message'];
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " +  data['message'];
+              B0.value = B0ValueSaved
+              B1.value = B1ValueSaved
+    
             })
             .catch(error => {
               alert("An error occurred:", error);
             });
-        
+            
           }  
     function ajaxTrain(case_value,L1value) {
         fetch(`{% url "CreateL5" %}?case=${case_value}`)
             .then(response => response.json())
             .then(data => {
-              messageBox.innerText = data['message'];
-              
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Server: " +  data['message'];
+              B0.disabled = true;
+              B1.disabled = true;
+              B2.disabled = true;
+              B3.disabled = true;
+              B4.disabled = true;
+              B5.disabled = true;
+              B6.disabled = true;
             })
             .catch(error => {
               alert("An error occurred:", error);
@@ -122,7 +155,7 @@
     <input type="text" id="L0" name="L0" value="This recipe has these ingredients." readonly>
     <br>
     <label for="L0appear">Level 0 Appearance:</label>
-    <input type="text" id="L0appear" name="L0appear" placeholder="Enter terms...">
+    <input type="text" id="L0appear" name="L0appear" placeholder="Enter ingredients...">
     <br>
     <label for="L1">Level 1 Proposition:</label>
     <input type="text" id="L1" name="L1" placeholder="">
@@ -131,7 +164,7 @@
     <input type="text" id="L1Desired" name="L1Desired" placeholder="">
     <br>
     <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">ADD S1-L0 PROPOSITION TO CASE</button> 
-    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE QUICK S1-L1</button> 
+    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE DEFAULT S1-L1</button> 
     <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)">ADD S1-L1 DEFAULT TO CASE</button> 
     <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value,L1Desired.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
     <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">DELIBERATE S1-L1</button> 
@@ -146,8 +179,9 @@
       // Add click handler
       refreshButton.addEventListener('click', function() {
           // Reload page
-          L0appear.value = "Enter terms..."
+          L0appear.value = "Enter ingredients here..."
           L1.value = ""
+          L1Desired.value = ""
           location.reload();
 
           });
@@ -160,7 +194,8 @@
       const messageBox = document.getElementById('messageBox');
 
       // Set message 
-      messageBox.innerText = 'Start/Reset';
+      messageBox.style.color = 'green';
+      messageBox.innerText = 'Enter ingredients, then ADD S1-L0 proposition';
 
       
 </script>
@@ -170,24 +205,6 @@
     <button onclick="ajaxCallTrain('{{data.case}}',L0.value)">SET CASE TO TRAIN</button> 
 
 {% endif %}  
-
-
-<div class="message-box" ID="message-box2">
-      Enter terms
-      </div>
-
-  
-<script>
-      
-      document.addEventListener('keydown', function(event) {
-      const messageBox2 = document.getElementById('message-box2');
-      if (messageBox2 && event.key === 'F5') {
-        refreshButton.click()
-      } else if (messageBox2) {
-        messageBox2.innerText = "";
-      }
-        });
-</script>
 
 
 </body>

@@ -431,3 +431,313 @@ TypeError: In order to allow non-dict objects to be serialized set the safe para
 2023-09-05 20:38:26,135:INFO:L0 proposition>{'case': 31, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
 2023-09-05 20:38:50,007:INFO:L1 S2 proposition>{'case': 31, 'proposition': 'This recipe is very Chinese', 'desired': 'very chinese', 'appearance': '', 'essence': '', 'level': 1}
 2023-09-05 20:38:51,807:INFO:realistic call>{'case': 31}
+2023-09-05 20:45:21,020:INFO:L0 proposition>{'case': 33, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 20:45:36,204:INFO:L1 S1 proposition>{'case': 33, 'proposition': 'This recipe is Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:45:38,203:INFO:train case>{'case': 33}
+2023-09-05 20:46:22,430:INFO:L0 proposition>{'case': 34, 'proposition': 'This recipe has these ingredients.', 'appearance': 'burrito tabasco jalapeno olive onion', 'essence': '', 'level': 0}
+2023-09-05 20:46:33,246:INFO:L1 S2 proposition>{'case': 34, 'proposition': '?', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:46:34,902:INFO:realistic call>{'case': 34}
+2023-09-05 20:47:21,560:INFO:L0 proposition>{'case': 35, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 20:47:50,169:INFO:L0 proposition>{'case': 36, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 20:48:07,817:INFO:L1 S2 proposition>{'case': 36, 'proposition': 'This is Italian', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:48:09,417:INFO:realistic call>{'case': 36}
+2023-09-05 20:49:34,244:INFO:L0 proposition>{'case': 37, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 20:49:45,419:INFO:L1 S2 proposition>{'case': 37, 'proposition': 'This is Chinese', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:49:46,972:INFO:realistic call>{'case': 37}
+2023-09-05 20:50:33,125:INFO:L0 proposition>{'case': 38, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 20:50:41,910:INFO:L1 S2 proposition>{'case': 38, 'proposition': 'this is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 20:50:43,966:INFO:realistic call>{'case': 38}
+2023-09-05 20:59:39,527:INFO:realistic call>{'case': 38}
+2023-09-05 21:00:08,623:INFO:L0 proposition>{'case': 39, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:00:17,680:INFO:L1 S2 proposition>{'case': 39, 'proposition': '?', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:00:19,696:INFO:realistic call>{'case': 39}
+2023-09-05 21:00:39,744:INFO:L0 proposition>{'case': 40, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:00:55,841:INFO:L1 S2 proposition>{'case': 40, 'proposition': 'This cuisine is Italian', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:00:59,249:INFO:realistic call>{'case': 40}
+2023-09-05 21:01:11,849:INFO:L0 proposition>{'case': 41, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:01:21,698:INFO:L1 S2 proposition>{'case': 41, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:01:24,002:INFO:realistic call>{'case': 41}
+2023-09-05 21:01:31,674:INFO:L0 proposition>{'case': 42, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:01:41,242:INFO:L1 S2 proposition>{'case': 42, 'proposition': 'This recipe is...', 'desired': 'Italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:01:43,155:INFO:realistic call>{'case': 42}
+2023-09-05 21:01:49,490:INFO:L0 proposition>{'case': 43, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 21:02:04,299:INFO:L1 S2 proposition>{'case': 43, 'proposition': '?', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:02:06,003:INFO:realistic call>{'case': 43}
+2023-09-05 21:02:16,747:INFO:L0 proposition>{'case': 44, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:02:23,140:INFO:L1 S1 proposition>{'case': 44, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:02:31,653:INFO:retract that>{'case': 44}
+2023-09-05 21:02:36,940:INFO:L1 S2 proposition>{'case': 44, 'proposition': 'This recipe is...', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:02:40,084:INFO:realistic call>{'case': 44}
+2023-09-05 21:02:51,453:INFO:L0 proposition>{'case': 45, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:03:04,709:INFO:L1 S2 proposition>{'case': 45, 'proposition': '?', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:03:06,221:INFO:realistic call>{'case': 45}
+2023-09-05 21:03:31,501:INFO:L0 proposition>{'case': 46, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:03:50,998:INFO:L1 S2 proposition>{'case': 46, 'proposition': 'This recipe is Italian', 'desired': ' spaghetti', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:03:52,806:INFO:realistic call>{'case': 46}
+2023-09-05 21:09:50,882:INFO:realistic call>{'case': 46}
+2023-09-05 21:10:01,994:INFO:realistic call>{'case': 46}
+2023-09-05 21:16:42,848:INFO:realistic call>{'case': 46}
+2023-09-05 21:16:43,081:ERROR:Internal Server Error: /ame_client_app/CreateL3
+Traceback (most recent call last):
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib64/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 130, in CreateL3
+    data = response.json()
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-09-05 21:19:54,926:ERROR:Internal Server Error: /ame_client_app/
+Traceback (most recent call last):
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib64/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 29, in index
+    data = response.json()
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-09-05 21:20:31,723:ERROR:Internal Server Error: /ame_client_app/
+Traceback (most recent call last):
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib64/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 29, in index
+    data = response.json()
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-09-05 21:20:32,854:ERROR:Internal Server Error: /ame_client_app/
+Traceback (most recent call last):
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib64/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jazzbox35/GitHub/AME_Client_Project/ame_client_project/ame_client_app/views.py", line 29, in index
+    data = response.json()
+  File "/home/jazzbox35/.local/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2023-09-05 21:23:32,308:INFO:L0 proposition>{'case': 47, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:23:43,508:INFO:L1 S1 proposition>{'case': 47, 'proposition': 'This recipe is Italian', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:23:50,549:INFO:L1 S2 proposition>{'case': 47, 'proposition': 'This recipe is Italian', 'desired': ' spaghetti', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:23:59,581:INFO:L0 proposition>{'case': 48, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:24:04,380:INFO:L1 S2 proposition>{'case': 48, 'proposition': 'This recipe is...', 'desired': ' spaghetti', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:24:06,028:INFO:realistic call>{'case': 48}
+2023-09-05 21:26:31,714:INFO:L0 proposition>{'case': 49, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:26:40,322:INFO:L1 S2 proposition>{'case': 49, 'proposition': 'This recipe is...', 'desired': ' spaghetti', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:26:41,778:INFO:realistic call>{'case': 49}
+2023-09-05 21:27:52,093:INFO:L0 proposition>{'case': 50, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:28:05,629:INFO:L1 S2 proposition>{'case': 50, 'proposition': '?', 'desired': ' spaghetti', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:28:12,197:INFO:realistic call>{'case': 50}
+2023-09-05 21:29:07,591:INFO:L0 proposition>{'case': 51, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:29:16,095:INFO:L1 S2 proposition>{'case': 51, 'proposition': '? ', 'desired': '        ', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:29:17,687:INFO:realistic call>{'case': 51}
+2023-09-05 21:30:49,602:INFO:L0 proposition>{'case': 52, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucini', 'essence': '', 'level': 0}
+2023-09-05 21:30:59,170:INFO:L1 S2 proposition>{'case': 52, 'proposition': '?', 'desired': '        ', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:31:01,938:INFO:realistic call>{'case': 52}
+2023-09-05 21:31:26,779:INFO:L0 proposition>{'case': 53, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucinirms...', 'essence': '', 'level': 0}
+2023-09-05 21:31:35,171:INFO:L1 S2 proposition>{'case': 53, 'proposition': 'This recipe is...', 'desired': 'good', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:31:37,299:INFO:realistic call>{'case': 53}
+2023-09-05 21:33:13,319:INFO:L0 proposition>{'case': 54, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucinirms...', 'essence': '', 'level': 0}
+2023-09-05 21:33:18,566:INFO:L1 S2 proposition>{'case': 54, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:33:20,327:INFO:realistic call>{'case': 54}
+2023-09-05 21:36:22,364:INFO:L0 proposition>{'case': 55, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucinirms...', 'essence': '', 'level': 0}
+2023-09-05 21:36:25,900:INFO:L1 S2 proposition>{'case': 55, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:36:27,484:INFO:realistic call>{'case': 55}
+2023-09-05 21:40:28,948:INFO:L0 proposition>{'case': 56, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucinirms...', 'essence': '', 'level': 0}
+2023-09-05 21:40:31,900:INFO:L1 S2 proposition>{'case': 56, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:40:33,907:INFO:realistic call>{'case': 56}
+2023-09-05 21:42:49,265:INFO:realistic call>{'case': 56}
+2023-09-05 21:48:23,900:INFO:realistic call>{'case': 56}
+2023-09-05 21:50:18,591:INFO:L0 proposition>{'case': 57, 'proposition': 'This recipe has these ingredients.', 'appearance': 'pesto onion olive fettucinirms...', 'essence': '', 'level': 0}
+2023-09-05 21:50:32,872:INFO:L1 S2 proposition>{'case': 57, 'proposition': 'This recipe is...', 'desired': 'Italian ', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:50:34,895:INFO:realistic call>{'case': 57}
+2023-09-05 21:50:57,424:INFO:L0 proposition>{'case': 58, 'proposition': 'This recipe has these ingredients.', 'appearance': 'soy sauce white rice pork', 'essence': '', 'level': 0}
+2023-09-05 21:51:06,257:INFO:L1 S2 proposition>{'case': 58, 'proposition': 'This recipe is Chinese', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:51:07,904:INFO:realistic call>{'case': 58}
+2023-09-05 21:51:27,497:INFO:L0 proposition>{'case': 59, 'proposition': 'This recipe has these ingredients.', 'appearance': 'tortilla tabasco sauce rice beans', 'essence': '', 'level': 0}
+2023-09-05 21:51:36,833:INFO:L1 S2 proposition>{'case': 59, 'proposition': 'This recipe is...', 'desired': 'Mexican', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:51:38,457:INFO:realistic call>{'case': 59}
+2023-09-05 21:51:55,465:INFO:L0 proposition>{'case': 60, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 21:52:19,314:INFO:L1 S1 proposition>{'case': 60, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:52:28,314:INFO:L1 S2 proposition>{'case': 60, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:52:29,899:INFO:realistic call>{'case': 60}
+2023-09-05 21:54:10,919:INFO:L0 proposition>{'case': 61, 'proposition': 'This recipe has these ingredients.', 'appearance': 'tortilla tabasco sauce rice beans guacamole', 'essence': '', 'level': 0}
+2023-09-05 21:54:16,359:INFO:L1 S2 proposition>{'case': 61, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:54:18,117:INFO:realistic call>{'case': 61}
+2023-09-05 21:54:57,816:INFO:L0 proposition>{'case': 63, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice pork soy sauce', 'essence': '', 'level': 0}
+2023-09-05 21:55:11,768:INFO:L1 S2 proposition>{'case': 63, 'proposition': '?', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:55:13,056:INFO:realistic call>{'case': 63}
+2023-09-05 21:56:16,418:INFO:L0 proposition>{'case': 64, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:56:26,058:INFO:L1 S2 proposition>{'case': 64, 'proposition': '?', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:56:27,579:INFO:realistic call>{'case': 64}
+2023-09-05 21:56:45,402:INFO:L0 proposition>{'case': 65, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:56:59,212:INFO:L1 S2 proposition>{'case': 65, 'proposition': '?', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:57:03,811:INFO:realistic call>{'case': 65}
+2023-09-05 21:57:26,989:INFO:L0 proposition>{'case': 66, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:57:35,948:INFO:L1 S2 proposition>{'case': 66, 'proposition': 'This recipe is Chinese', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:57:36,956:INFO:realistic call>{'case': 66}
+2023-09-05 21:57:50,109:INFO:L0 proposition>{'case': 67, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:57:58,613:INFO:L1 S2 proposition>{'case': 67, 'proposition': 'This recipe is...', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:58:00,230:INFO:realistic call>{'case': 67}
+2023-09-05 21:58:09,085:INFO:L0 proposition>{'case': 68, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:58:19,118:INFO:L1 S2 proposition>{'case': 68, 'proposition': 'Cuisine is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:58:20,470:INFO:realistic call>{'case': 68}
+2023-09-05 21:59:08,776:INFO:L0 proposition>{'case': 69, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 21:59:20,272:INFO:L1 S2 proposition>{'case': 69, 'proposition': 'This recipe is Chinese cuisine', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 21:59:22,095:INFO:realistic call>{'case': 69}
+2023-09-05 22:00:26,042:INFO:realistic call>{'case': 69}
+2023-09-05 22:00:33,130:INFO:realistic call>{'case': 69}
+2023-09-05 22:01:30,476:INFO:realistic call>{'case': 69}
+2023-09-05 22:01:44,292:INFO:realistic call>{'case': 69}
+2023-09-05 22:05:20,739:INFO:L0 proposition>{'case': 70, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:05:36,787:INFO:L1 S1 proposition>{'case': 70, 'proposition': 'This recipe is Chinese Cuisine', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:05:44,204:INFO:L0 proposition>{'case': 71, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:05:59,140:INFO:L1 S2 proposition>{'case': 71, 'proposition': 'This recipe is Chinese cuisine', 'desired': 'Cuisine', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:06:00,485:INFO:realistic call>{'case': 71}
+2023-09-05 22:07:00,895:INFO:L0 proposition>{'case': 72, 'proposition': 'This recipe has these ingredients.', 'appearance': '', 'essence': '', 'level': 0}
+2023-09-05 22:07:11,742:INFO:L0 proposition>{'case': 73, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:07:20,295:INFO:L1 S2 proposition>{'case': 73, 'proposition': 'This recipe is Mexican', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:07:22,446:INFO:realistic call>{'case': 73}
+2023-09-05 22:07:31,415:INFO:L0 proposition>{'case': 74, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:07:46,295:INFO:L1 S2 proposition>{'case': 74, 'proposition': '?', 'desired': 'Mexican', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:07:47,672:INFO:realistic call>{'case': 74}
+2023-09-05 22:07:54,368:INFO:L0 proposition>{'case': 75, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:08:06,856:INFO:L1 S2 proposition>{'case': 75, 'proposition': 'This recipe is Mexican', 'desired': 'Chinese', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:08:08,289:INFO:realistic call>{'case': 75}
+2023-09-05 22:08:15,384:INFO:L0 proposition>{'case': 76, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:08:17,897:INFO:L1 S2 proposition>{'case': 76, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:08:19,376:INFO:realistic call>{'case': 76}
+2023-09-05 22:08:37,649:INFO:L0 proposition>{'case': 77, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:08:46,698:INFO:L1 S2 proposition>{'case': 77, 'proposition': 'This recipe is mostly Chinese', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:08:48,290:INFO:realistic call>{'case': 77}
+2023-09-05 22:09:40,387:INFO:L0 proposition>{'case': 78, 'proposition': 'This recipe has these ingredients.', 'appearance': 'white rice soy sauce pork chicken', 'essence': '', 'level': 0}
+2023-09-05 22:09:52,324:INFO:L1 S2 proposition>{'case': 78, 'proposition': 'This recipe is mostly Chinese', 'desired': 'mostly', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:09:54,268:INFO:realistic call>{'case': 78}
+2023-09-05 22:38:14,258:INFO:L0 proposition>{'case': 79, 'proposition': 'This recipe has these ingredients.', 'appearance': 'salt water pork beans rice', 'essence': '', 'level': 0}
+2023-09-05 22:38:18,330:INFO:L1 S2 proposition>{'case': 79, 'proposition': 'Cuisine type is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:38:19,634:INFO:realistic call>{'case': 79}
+2023-09-05 22:38:50,579:INFO:L0 proposition>{'case': 80, 'proposition': 'This recipe has these ingredients.', 'appearance': 'tortilla jalapeno beans rice salsa', 'essence': '', 'level': 0}
+2023-09-05 22:38:53,218:INFO:L1 S2 proposition>{'case': 80, 'proposition': 'Cuisine type is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:38:54,491:INFO:realistic call>{'case': 80}
+2023-09-05 22:43:16,558:INFO:L0 proposition>{'case': 81, 'proposition': 'This recipe has these ingredients.', 'appearance': 'tortilla jalapeno beans rice salsa', 'essence': '', 'level': 0}
+2023-09-05 22:43:44,611:INFO:L1 S1 proposition>{'case': 81, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:43:46,758:INFO:L1 S2 proposition>{'case': 81, 'proposition': 'This recipe is...', 'desired': 'OK', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:43:48,490:INFO:realistic call>{'case': 81}
+2023-09-05 22:48:52,710:INFO:L0 proposition>{'case': 82, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 22:56:52,741:INFO:L0 proposition>{'case': 85, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 22:57:13,397:INFO:L1 S1 proposition>{'case': 85, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 22:57:15,127:INFO:L1 S2 proposition>{'case': 85, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:11:46,569:INFO:L0 proposition>{'case': 92, 'proposition': 'This recipe has these ingredients.', 'appearance': 'cream alcohol', 'essence': '', 'level': 0}
+2023-09-05 23:11:57,680:INFO:L1 S1 proposition>{'case': 92, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:12:04,826:INFO:train case>{'case': 92}
+2023-09-05 23:12:44,947:INFO:L1 S2 proposition>{'case': 92, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:12:48,178:INFO:realistic call>{'case': 92}
+2023-09-05 23:12:51,778:INFO:retract that>{'case': 92}
+2023-09-05 23:27:36,211:INFO:L0 proposition>{'case': 100, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter terms...', 'essence': '', 'level': 0}
+2023-09-05 23:29:46,653:WARNING:Not Found: /ame_client_app/OK
+2023-09-05 23:29:46,676:WARNING:Not Found: /favicon.ico
+2023-09-05 23:31:43,757:INFO:L0 proposition>{'case': 108, 'proposition': 'This recipe has these ingredients.', 'appearance': 'abcde', 'essence': '', 'level': 0}
+2023-09-05 23:33:49,401:INFO:L0 proposition>{'case': 109, 'proposition': 'This recipe has these ingredients.', 'appearance': 'tomato basel bread paprika', 'essence': '', 'level': 0}
+2023-09-05 23:33:54,936:INFO:L1 S2 proposition>{'case': 109, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:33:56,529:INFO:realistic call>{'case': 109}
+2023-09-05 23:35:26,116:INFO:retract that>{'case': 109}
+2023-09-05 23:43:31,547:INFO:L0 proposition>{'case': 134, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:44:44,373:INFO:L0 proposition>{'case': 135, 'proposition': 'This recipe has these ingredients.', 'appearance': 'black olives', 'essence': '', 'level': 0}
+2023-09-05 23:48:01,012:INFO:L0 proposition>{'case': 136, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:48:25,890:INFO:L0 proposition>{'case': 137, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:49:13,254:INFO:L0 proposition>{'case': 138, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:50:29,112:INFO:L1 S2 proposition>{'case': 138, 'proposition': '', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:50:36,953:INFO:L1 S1 proposition>{'case': 138, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:50:54,417:INFO:L0 proposition>{'case': 139, 'proposition': 'This recipe has these ingredients.', 'appearance': 'ham', 'essence': '', 'level': 0}
+2023-09-05 23:51:09,754:INFO:L1 S2 proposition>{'case': 139, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:51:15,233:INFO:realistic call>{'case': 139}
+2023-09-05 23:52:10,052:INFO:train case>{'case': 139}
+2023-09-05 23:52:12,939:INFO:realistic call>{'case': 139}
+2023-09-05 23:52:14,747:INFO:retract that>{'case': 139}
+2023-09-05 23:52:16,684:INFO:train case>{'case': 139}
+2023-09-05 23:53:53,303:INFO:L0 proposition>{'case': 141, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:54:03,927:INFO:L1 S2 proposition>{'case': 141, 'proposition': 'This recipe is...', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:54:06,687:INFO:train case>{'case': 141}
+2023-09-05 23:54:23,888:INFO:L0 proposition>{'case': 142, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:54:28,927:INFO:L1 S1 proposition>{'case': 142, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:54:34,864:INFO:train case>{'case': 142}
+2023-09-05 23:56:30,180:INFO:L0 proposition>{'case': 145, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:56:35,812:INFO:L1 S2 proposition>{'case': 145, 'proposition': '', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:56:37,636:INFO:realistic call>{'case': 145}
+2023-09-05 23:56:42,419:INFO:train case>{'case': 145}
+2023-09-05 23:57:50,446:INFO:L0 proposition>{'case': 146, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-05 23:57:54,006:INFO:L1 S2 proposition>{'case': 146, 'proposition': '', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:57:55,406:INFO:realistic call>{'case': 146}
+2023-09-05 23:57:58,919:INFO:train case>{'case': 146}
+2023-09-05 23:58:18,879:INFO:L0 proposition>{'case': 147, 'proposition': 'This recipe has these ingredients.', 'appearance': 'black olive', 'essence': '', 'level': 0}
+2023-09-05 23:58:31,248:INFO:L1 S2 proposition>{'case': 147, 'proposition': 'This recipe is Italian', 'desired': '', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-05 23:58:33,976:INFO:realistic call>{'case': 147}
+2023-09-05 23:58:53,600:INFO:train case>{'case': 147}
+2023-09-06 00:02:42,959:INFO:L0 proposition>{'case': 148, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:09:14,356:INFO:L0 proposition>{'case': 150, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:11:19,912:INFO:L0 proposition>{'case': 151, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:11:27,176:INFO:retract that>{'case': 151}
+2023-09-06 00:12:36,339:INFO:L0 proposition>{'case': 152, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:12:41,010:INFO:retract that>{'case': 152}
+2023-09-06 00:18:22,133:INFO:L0 proposition>{'case': 153, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:18:32,013:INFO:L1 S1 proposition>{'case': 153, 'proposition': 'This recipe is...', 'appearance': '', 'essence': '', 'level': 1}
+2023-09-06 00:18:33,789:INFO:retract that>{'case': 153}
+2023-09-06 00:19:33,255:INFO:L0 proposition>{'case': 154, 'proposition': 'This recipe has these ingredients.', 'appearance': 'Enter ingredients here...', 'essence': '', 'level': 0}
+2023-09-06 00:19:37,725:INFO:retract that>{'case': 154}
