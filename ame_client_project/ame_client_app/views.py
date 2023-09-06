@@ -27,9 +27,8 @@ def index(request):
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
-    case = data['case']
-    message = data['message']
-
+    logging.info("Create case>" + str(data) + " status>" + str(response.status_code))
+    
     next_action = 'input_terms'
     return render(request, "ame_client_app/home.html", {"data": data, "next_action": next_action})
 
@@ -42,7 +41,8 @@ def CreateL0(request):
     headers = {
           'api-key':  ame_api_key
       }
-    #appearance =  request.GET.get('appearance')
+    if len(appearance) == 0:
+        appearance = "NIL"
     data = {
       "case": int(case),
       "proposition" :  proposition,
@@ -50,13 +50,12 @@ def CreateL0(request):
       "essence"     : "",
       "level"       : 0
     }
-    logging.info("L0 proposition>" + str(data))
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
-
+    logging.info("L0 proposition>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)
 
 def CreateL1(request):
@@ -75,13 +74,13 @@ def CreateL1(request):
       "essence"     :  "",
       "level"       :  1
     }
-    logging.info("L1 S1 proposition>" + str(data))
+    
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
-
+    logging.info("L1 S1 proposition>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)
 
 def CreateL2(request):
@@ -102,13 +101,13 @@ def CreateL2(request):
       "essence"     :  "",
       "level"       :  1
     }
-    logging.info("L1 S2 proposition>" + str(data))
+    
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
-
+    logging.info("L1 S2 proposition>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)
 
 def CreateL3(request):
@@ -122,13 +121,13 @@ def CreateL3(request):
     data = {
       "case": int(case),
     }
-    logging.info("realistic call>" + str(data))
+    
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
-
+    logging.info("realistic call>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)
 
 def CreateL4(request):
@@ -142,12 +141,13 @@ def CreateL4(request):
     data = {
       "case": int(case),
     }
-    logging.info("retract that>" + str(data))
+    
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
+    logging.info("retract that>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)
 
 def CreateL5(request):
@@ -161,10 +161,11 @@ def CreateL5(request):
     data = {
       "case": int(case),
     }
-    logging.info("train case>" + str(data))
+    
     try:
         response = requests.put(api_url, headers=headers, json=data)
     except:
         return HttpResponse("Cannot communicate with AME server")
     data = response.json()
+    logging.info("train case>" + str(data) + " status>" + str(response.status_code))
     return JsonResponse(data)

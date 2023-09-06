@@ -6,19 +6,8 @@
 
   
   <script>
-    function saveValues() {
-     // Save values in case of retract, should be an array but oh well
-        B0ValueSaved = B0.value;
-        B1ValueSaved = B1.value;
-        B2ValueSaved = B2.value;
-        B3ValueSaved = B3.value;
-        B4ValueSaved = B4.value;
-        B5ValueSaved = B5.value;
-        B6ValueSaved = B6.value;
-    }
-
+    var prop_level = 0;
     function ajaxCallCreateL0(case_value,L0value,L0appear) {
-        saveValues()
         fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}&L0appear=${encodeURIComponent(L0appear)}`)
             .then(response => response.json())
             .then(data => {
@@ -27,14 +16,15 @@
               B0.disabled = true;
               B1.disabled = false;
               B3.disabled = false;
+              B5.disabled = false;
+              prop_level = prop_level + 1
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
             
           }   
     function ajaxCallCreateL1() {
-        saveValues()
         messageBox.style.color = 'green'
         messageBox.innerText = "S1-L1 Default Generated"
         L1.value = "This recipe is..."
@@ -43,39 +33,39 @@
               B3.disabled = false;
           }   
     function ajaxCallCreateL2(case_value,L1value) {
-        saveValues()
         fetch(`{% url "CreateL1" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
             .then(response => response.json())
             .then(data => {
               messageBox.style.color = 'red'
               messageBox.innerText = "Server: " + data['message'];
+              B1.disabled = true;
               B2.disabled = true;
+              B3.disabled = true;
+              prop_level = prop_level +  1
     
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
-        
           }  
     function ajaxCallCreateL3(case_value,L1value,L1Desired) {
-        saveValues()
         fetch(`{% url "CreateL2" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}&L1Desired=${encodeURIComponent(L1Desired)}`)
             .then(response => response.json())
             .then(data => {
               messageBox.style.color = 'red'
               messageBox.innerText = "Server: " + data['message'];
-              B2.disabled = true;
+              B1.disabled = true;
+              B2.disabled = true; 
               B3.disabled = true;
               B4.disabled = false;
-    
+              prop_level = prop_level + 1
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
         
           }  
     function ajaxCallCreateL4(case_value) {
-        saveValues()
         fetch(`{% url "CreateL3" %}?case=${case_value}`)
             .then(response => response.json())
             .then(data => {
@@ -84,7 +74,7 @@
               B4.disabled = false;    
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
         
           }  
@@ -92,14 +82,31 @@
         fetch(`{% url "CreateL4" %}?case=${case_value}`)
             .then(response => response.json())
             .then(data => {
+              prop_level = prop_level - 1;
               messageBox.style.color = 'red'
-              messageBox.innerText = "Server: " +  data['message'];
-              B0.value = B0ValueSaved
-              B1.value = B1ValueSaved
-    
+              messageBox.innerText = "Server: " +  data['message'] + " L" + prop_level;
+              if (prop_level == 1) {
+                B0.disabled = true;
+                B1.disabled = false;
+                B2.disabled = true;
+                B3.disabled = false;
+                B4.disabled = true;
+                B5.disabled = false;
+                L1.value    = "";
+                L1Desired.value   = "";
+              }
+              if (prop_level == 0){
+                B0.disabled = false;
+                B1.disabled = true;
+                B2.disabled = true;
+                B3.disabled = true;
+                B4.disabled = true;
+                B5.disabled = true;
+                L0appear.value = "";
+              }
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
             
           }  
@@ -118,10 +125,11 @@
               B6.disabled = true;
             })
             .catch(error => {
-              alert("An error occurred:", error);
+              alert("An error occurred, server may be down");
             });
         
           }  
+    
   </script>
   
   <style>
@@ -190,6 +198,7 @@
       B2.disabled = true;
       B3.disabled = true;
       B4.disabled = true;
+      B5.disabled = true;
       // Get new message box 
       const messageBox = document.getElementById('messageBox');
 
