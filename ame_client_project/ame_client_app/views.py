@@ -2,8 +2,6 @@
 #   Input:        User propositions and associated keywords 
 #   Output:       Server evaluation of proposition and submission of a case for training
 
-#   This program and associated Django files is free to clone as desired
-
 import requests
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
