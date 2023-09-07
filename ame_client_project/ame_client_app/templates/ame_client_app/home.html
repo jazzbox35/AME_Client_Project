@@ -3,11 +3,28 @@
 
 <head>
   <title>AME Generic Client App</title>
-
+  <style>
+    .message-box-bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: lightgreen;
+      text-align: left; /* Left-justify the text */
+      width: 100%; /* Make it span the entire width */
+    }
+  </style>
   
   <script>
     var prop_level = 0;
     function ajaxCallCreateL0(case_value,L0value,L0appear) {
+        if (L0appear == "Enter ingredients here..."){
+              messageBox.style.color = 'red'
+              messageBox.innerText = "Please enter ingredients";
+              
+              return;
+        }
         fetch(`{% url "CreateL0" %}?case=${case_value}&L0value=${encodeURIComponent(L0value)}&L0appear=${encodeURIComponent(L0appear)}`)
             .then(response => response.json())
             .then(data => {
@@ -17,20 +34,47 @@
               B1.disabled = false;
               B3.disabled = false;
               B5.disabled = false;
+              document.getElementById("L1").removeAttribute("readonly");
+              document.getElementById("L1Desired").removeAttribute("readonly");
+              document.getElementById("L0appear").setAttribute("readonly","");              
               prop_level = prop_level + 1
+              ajaxCallCreateL1()
             })
             .catch(error => {
               alert("An error occurred, server may be down");
             });
             
           }   
+
     function ajaxCallCreateL1() {
         messageBox.style.color = 'green'
-        messageBox.innerText = "S1-L1 Default Generated"
-        L1.value = "This recipe is..."
-              B1.disabled = true;
-              B2.disabled = false;
-              B3.disabled = false;
+        messageBox.innerText = "S1-L1 Default Generated."
+        if (L0appear.value.includes("soy")) {
+          L1.value = "This recipe is Chinese"
+          B2.disabled = false;
+          }
+        else if (L0appear.value.includes("olive oil")) {
+          L1.value = "This recipe is Italian"
+          B2.disabled = false;
+          }
+        else if (L0appear.value.includes("corn")) {
+          L1.value = "This recipe is Mexican"
+          B2.disabled = false;
+          }
+        else if (L0appear.value.includes("garam")) {
+          L1.value = "This recipe is Indian"
+          B2.disabled = false;
+          }
+        else if (L0appear.value.includes("bell peppers")) {
+          L1.value = "This recipe is Cajun Creole"
+          B2.disabled = false;
+          }
+        else {
+          L1.value = "?"
+          B2.disabled = true
+          }
+        B1.disabled = true;
+        B3.disabled = false;
           }   
     function ajaxCallCreateL2(case_value,L1value) {
         fetch(`{% url "CreateL1" %}?case=${case_value}&L1value=${encodeURIComponent(L1value)}`)
@@ -71,10 +115,11 @@
             .then(data => {
               messageBox.style.color = 'red'
               messageBox.innerText = "Server: " + data['decision'] + " " + data['judgments'];
+              L1.value = data['judgments']; 
               B4.disabled = false;    
             })
             .catch(error => {
-              alert("An error occurred, server may be down");
+              alert("An error occurred, server may be down", error);
             });
         
           }  
@@ -84,7 +129,7 @@
             .then(data => {
               prop_level = prop_level - 1;
               messageBox.style.color = 'red'
-              messageBox.innerText = "Server: " +  data['message'] + " L" + prop_level;
+              messageBox.innerText = "Server: " +  data['message'];
               if (prop_level == 1) {
                 B0.disabled = true;
                 B1.disabled = false;
@@ -92,7 +137,7 @@
                 B3.disabled = false;
                 B4.disabled = true;
                 B5.disabled = false;
-                L1.value    = "";
+                L1.value    = "?";
                 L1Desired.value   = "";
               }
               if (prop_level == 0){
@@ -102,7 +147,11 @@
                 B3.disabled = true;
                 B4.disabled = true;
                 B5.disabled = true;
-                L0appear.value = "";
+                L1.value    = "?";
+                L1Desired.value   = "";
+                document.getElementById("L0appear").removeAttribute("readonly");
+                document.getElementById("L1").setAttribute("readonly","");
+                document.getElementById("L1Desired").setAttribute("readonly","");
               }
             })
             .catch(error => {
@@ -129,14 +178,14 @@
             });
         
           }  
-    
   </script>
   
   <style>
     .message-box {
       border: 1px solid #ccc;
       padding: 10px;
-      background: #f9f9f9;
+      background: black; /* Change the background color to black */
+      color: white; /* Set the text color to white */
     }
     </style>
 </head>
@@ -144,69 +193,101 @@
 <!-- you must pass at least the "data" and "next_action" JSON fields-->
 
 <body>
-    
 
 <center>
-    <h1>
+    
       <div class="message-box">
+        <p>AbsoluteMode Engine Shell Demo</p>
         <p>Case Number {{ data.case }}</p>
       </div>
-    </h1>
+    
     
     <div id="messageBox"></div>
   
 </center>
 
+<style>
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label,
+  .form-group input {
+    margin-bottom: 10px;
+  }
+</style>
 
 {% if next_action  == 'input_terms' %}
-    <label for="L0">Level 0 Proposition:</label>
-    <input type="text" id="L0" name="L0" value="This recipe has these ingredients." readonly>
+  <div class="form-group">
+    <label for="L0">Level 0 Proposition (Static):</label>
+    <input type="text" id="L0" name="L0" value="This recipe has these ingredients." readonly size="30">
     <br>
-    <label for="L0appear">Level 0 Appearance:</label>
-    <input type="text" id="L0appear" name="L0appear" placeholder="Enter ingredients...">
+    <label for="L0appear">Level 0 Appearance Terms:</label>
+    <input type="text" id="L0appear" name="L0appear" placeholder="Enter ingredients..." size="60">
     <br>
-    <label for="L1">Level 1 Proposition:</label>
-    <input type="text" id="L1" name="L1" placeholder="">
+    <label for="L1">Level 1 Proposition, Choice of System 1 or 2:</label>
+    <input type="text" id="L1" name="L1" placeholder="" size="30">
+    <label for="L1Desired">Level 1 Desired Terms in Level 1, System 2 Proposition:</label>
+    <input type="text" id="L1Desired" name="L1Desired" placeholder="" size="10">
     <br>
-    <label for="L1Desired">Level 1 Desired Terms:</label>
-    <input type="text" id="L1Desired" name="L1Desired" placeholder="">
-    <br>
-    <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">ADD S1-L0 PROPOSITION TO CASE</button> 
-    <button id="B1", onclick="ajaxCallCreateL1()">GENERATE DEFAULT S1-L1</button> 
-    <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)">ADD S1-L1 DEFAULT TO CASE</button> 
-    <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value,L1Desired.value)">ADD S2-L1 PROPOSITION OR QUERY</button> 
+  </div>
+    <center>
+    <br><br>
+    <button id="B0", onclick="ajaxCallCreateL0('{{data.case}}',L0.value,L0appear.value)">POST S1-L0 PROPOSITION TO CASE</button> 
+    <button id="B1", onclick="ajaxCallCreateL1()" style="display: none;">GENERATE DEFAULT S1-L1</button> 
+    <button id="B2", onclick="ajaxCallCreateL2('{{data.case}}',L1.value)" >POST S1-L1 DEFAULT TO CASE</button> 
+    <button id="B3", onclick="ajaxCallCreateL3('{{data.case}}',L1.value,L1Desired.value)">POST S2-L1 PROPOSITION OR QUERY</button> 
     <button id="B4", onclick="ajaxCallCreateL4('{{data.case}}')">DELIBERATE S1-L1</button> 
     <button id="B5", onclick="ajaxRetractThat('{{data.case}}')">RETRACT LAST PROPOSITION</button> 
     <button id="B6", onclick="ajaxTrain('{{data.case}}')">TRAIN CASE</button> 
 
     <button id="refreshButton">NEW CASE</button>
-
+    </center>
     <script>
       // Get button element
       const refreshButton = document.getElementById('refreshButton');
-      // Add click handler
+      // if refresh...
       refreshButton.addEventListener('click', function() {
           // Reload page
+          B0.disabled = false;
+          B1.disabled = true;
+          B2.disabled = true;
+          B3.disabled = true;
+          B4.disabled = true;
+          B5.disabled = true;
+          document.getElementById("L0appear").removeAttribute("readonly");
+          document.getElementById("L1").setAttribute("readonly","");
+          document.getElementById("L1Desired").setAttribute("readonly","");
           L0appear.value = "Enter ingredients here..."
-          L1.value = ""
+          L1.value = "?"
           L1Desired.value = ""
           location.reload();
 
           });
-    
+
+      // this needs to be set to just call refreshbutton.click()  
+      B0.disabled = false;
       B1.disabled = true;
       B2.disabled = true;
       B3.disabled = true;
       B4.disabled = true;
       B5.disabled = true;
+      document.getElementById("L0appear").removeAttribute("readonly");
+      document.getElementById("L1").setAttribute("readonly","");
+      document.getElementById("L1Desired").setAttribute("readonly","");
+      L0appear.value = "Enter ingredients here..."
+      L1.value = "?"
+      L1Desired.value = ""          
       // Get new message box 
       const messageBox = document.getElementById('messageBox');
 
       // Set message 
       messageBox.style.color = 'green';
-      messageBox.innerText = 'Enter ingredients, then ADD S1-L0 proposition';
+      messageBox.innerText = 'Enter ingredients first as "Appearance Terms"';
 
-      
+
 </script>
 
 
@@ -214,6 +295,24 @@
     <button onclick="ajaxCallTrain('{{data.case}}',L0.value)">SET CASE TO TRAIN</button> 
 
 {% endif %}  
+
+  <div class="message-box-bottom">
+    <p>The basic function of this shell demo is to determine if input ingredients are part of a recipe which
+       can be classified as either Indian, Italian, Chinese, Mexican, or Creole. If the quick default System 1 result 
+       is unsatisfactory, call the engine for deliberation. This is just a very limited example. The shell
+       can be cloned and extended.
+       <P>
+       This shell demo is limited to one level zero and one level one proposition per case. The level 0 proposition is
+       always system 1. The level 1 proposition can be either system 1 or system 2. System 2 requires a call to the
+       engine (server). For system 2 you can enter a single ?, the first part of your desired proposition followed 
+       by ellipsis ('...'), or the entire desired proposition. The server will respond with its decision and  
+       a synthesized proposition if desired. If you desire certain terms in your proposition you can enter those too.
+       Please see the documentation section <a href="https://absolutemode.agiengine.online">here</a> for details.
+       <br><br>
+       S1 = System 1, S2 = System 2, L1 = Level 1, L2 = Level 2
+       
+    </p>
+  </div>
 
 
 </body>
