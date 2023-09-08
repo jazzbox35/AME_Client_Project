@@ -1,7 +1,7 @@
 # AME_Client_Project
 This is a generic shell that can be used to access the AbsoluteMode Engine.
 Please note that this is just a functional non-aesthetic shell you can clone and customize.
-Also note that this is my first Django program so it looks a bit of a hackjob in the code. Cleanups are envisioned...
+Also note that this is a first Django program which works but is in progress.
 
 Install:
 
