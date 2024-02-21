@@ -19,7 +19,7 @@
   <script>
     var prop_level = 0;
     function ajaxCallCreateL0(case_value,L0value,L0appear) {
-        if (L0appear == "Enter the ingredients of your recipe..."){
+        if (L0appear == "Enter all ingredients here..."){
               messageBox.style.color = 'red'
               messageBox.innerText = "Please enter ingredients";
               
@@ -225,7 +225,7 @@
     <input type="text" id="L0" name="L0" value="This recipe has these ingredients." readonly size="30">
     <br>
     <label for="L0appear">Level 0 Appearance Terms:</label>
-    <input type="text" id="L0appear" name="L0appear" placeholder="Enter ingredients..." size="60">
+    <input type="text" id="L0appear" name="L0appear" placeholder="Enter all ingredients..." size="60">
     <br>
     <label for="L1">Level 1 Proposition, Choice of System 1 or 2:</label>
     <input type="text" id="L1" name="L1" placeholder="" size="30">
@@ -260,7 +260,7 @@
           document.getElementById("L0appear").removeAttribute("readonly");
           document.getElementById("L1").setAttribute("readonly","");
           document.getElementById("L1Desired").setAttribute("readonly","");
-          L0appear.value = "Enter ingredients here..."
+          L0appear.value = "Enter all ingredients here..."
           L1.value = "?"
           L1Desired.value = ""
           location.reload();
@@ -277,7 +277,7 @@
       document.getElementById("L0appear").removeAttribute("readonly");
       document.getElementById("L1").setAttribute("readonly","");
       document.getElementById("L1Desired").setAttribute("readonly","");
-      L0appear.value = "Enter ingredients here..."
+      L0appear.value = "Enter all ingredients here..."
       L1.value = "?"
       L1Desired.value = ""          
       // Get new message box 
@@ -298,9 +298,9 @@
 
   <div class="message-box-bottom">
     <p>The basic function of this shell demo is to determine if input ingredients are part of a recipe which
-       can be classified as one of these: Indian, Italian, Chinese, Mexican, or Creole. If the quick default System 1 result 
-       is unsatisfactory, call the engine for deliberation. This is just a very limited example. The shell
-       can be cloned and extended.
+       can be classified as one of these: Indian, Italian, Chinese, Mexican, or Creole. More ingredients yield
+       better results. If the quick default System 1 result 
+       is unsatisfactory, call the engine for deliberation. This is just a very limited example. 
        <P>
        This shell demo is limited to one level zero and one level one proposition per case. The level 0 proposition is
        always system 1. The level 1 proposition can be either system 1 or system 2. System 2 requires a call to the
